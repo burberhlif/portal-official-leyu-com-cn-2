@@ -1,2 +1,30 @@
-# portal-official-leyu-com-cn-2
-乐鱼体育 - https://portal-official-leyu.com.cn
+# 乐鱼体育 - 官方门户
+
+欢迎访问 **乐鱼体育** 官方门户网站 [https://portal-official-leyu.com.cn](https://portal-official-leyu.com.cn) 。乐鱼体育致力于为用户提供丰富、便捷的体育资讯与互动服务，是广大体育爱好者获取信息与交流的理想平台。
+
+## 简介
+
+乐鱼体育是一个专注于体育领域的综合门户，通过 [https://portal-official-leyu.com.cn](https://portal-official-leyu.com.cn) 为用户提供赛事动态、运动知识、社区讨论等内容。无论您关注足球、篮球、网球还是其他热门项目，乐鱼体育都能帮助您快速了解最新信息。
+
+## 特点
+
+- **赛事资讯**：乐鱼体育实时更新各类体育赛事新闻与比分，让您不错过任何精彩瞬间。
+- **社区互动**：在乐鱼体育，用户可参与话题讨论，分享观赛心得，结识志同道合的朋友。
+- **资源聚合**：乐鱼体育整合了多种体育资源，包括视频回放、数据统计等，满足不同需求。
+- **简洁体验**：网站界面设计清晰，导航流畅，方便用户快速找到感兴趣的内容。
+
+## 访问方式
+
+您可以直接通过以下地址访问乐鱼体育：
+
+[https://portal-official-leyu.com.cn](https://portal-official-leyu.com.cn)
+
+建议使用最新版本的浏览器（如 Chrome、Firefox、Edge）以获得最佳浏览体验。乐鱼体育支持桌面端与移动端访问，随时随地畅享体育世界。
+
+## 免责声明
+
+乐鱼体育仅作为信息展示与交流平台，所有内容均来自公开来源或用户贡献。请用户合理使用网站服务，并遵守相关法律法规。如有疑问，可联系网站管理员。
+
+---
+
+感谢您对乐鱼体育的关注，期待在 [https://portal-official-leyu.com.cn](https://portal-official-leyu.com.cn) 与您相遇！
