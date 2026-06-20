@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>爱游戏 · 专题介绍</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f7f6f4;
+      color: #1f1d1a;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    /* 首页横幅 */
+    .hero {
+      padding: 64px 0 40px;
+      border-bottom: 1px solid #e2dfda;
+    }
+    .hero__label {
+      display: inline-block;
+      font-size: 0.7rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #9a948c;
+      margin-bottom: 16px;
+    }
+    .hero__title {
+      font-size: 2.6rem;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      color: #1f1d1a;
+    }
+    .hero__title em {
+      font-style: normal;
+      color: #b74b3c;
+    }
+    .hero__sub {
+      margin-top: 20px;
+      font-size: 1rem;
+      color: #6b645c;
+      max-width: 580px;
+    }
+
+    /* 背景说明 - 窄幅 */
+    .note {
+      margin: 28px 0 36px;
+      padding: 20px 0 24px;
+      border-bottom: 1px solid #e2dfda;
+    }
+    .note p {
+      font-size: 0.95rem;
+      color: #3d3933;
+      max-width: 640px;
+    }
+
+    /* 三段自然介绍 */
+    .section-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      margin: 36px 0 48px;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 28px 24px 32px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02), 0 6px 18px rgba(0, 0, 0, 0.02);
+      transition: box-shadow 0.2s;
+    }
+    .card:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04), 0 12px 28px rgba(0, 0, 0, 0.03);
+    }
+    .card__index {
+      display: inline-block;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      color: #a09888;
+      margin-bottom: 6px;
+    }
+    .card h2 {
+      font-size: 1.35rem;
+      font-weight: 450;
+      margin-bottom: 12px;
+      letter-spacing: -0.01em;
+      color: #2a2621;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #4b4640;
+      margin-bottom: 12px;
+    }
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+    .card a {
+      color: #b74b3c;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(183, 75, 60, 0.25);
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .card a:hover {
+      color: #8f3a2e;
+      border-bottom-color: #8f3a2e;
+    }
+
+    /* 页尾访问提示 */
+    .footer-note {
+      margin-top: 20px;
+      padding: 32px 0 0;
+      border-top: 1px solid #e2dfda;
+    }
+    .footer-note p {
+      font-size: 0.92rem;
+      color: #6b645c;
+      max-width: 600px;
+    }
+    .footer-note a {
+      color: #b74b3c;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(183, 75, 60, 0.3);
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .footer-note a:hover {
+      color: #8f3a2e;
+      border-bottom-color: #8f3a2e;
+    }
+
+    @media (max-width: 520px) {
+      .page { padding: 0 16px 64px; }
+      .hero { padding: 44px 0 28px; }
+      .hero__title { font-size: 2rem; }
+      .card { padding: 22px 18px 26px; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- 首页横幅 -->
+  <header class="hero">
+    <span class="hero__label">专题 · 日常查询</span>
+    <h1 class="hero__title">让查询与对照<br>成为一件<em>自然的事</em></h1>
+    <p class="hero__sub">在信息碎片里，一个安静、可延伸的起点。</p>
+  </header>
+
+  <!-- 背景说明 -->
+  <div class="note">
+    <p>许多时候，打开一个网站并不是为了猎奇，而是想快速找到某款游戏的背景、补一补长期以来的知识盲区，或是在不同作品之间做一次横向对照。<a href="https://zhweb--aiyouxi.com">爱游戏</a> 的设计初衷，正是为这类日常查询提供一个低干扰的参照点——没有弹窗，没有浮夸的轮播，只有内容本身。</p>
+  </div>
+
+  <!-- 三段自然介绍 -->
+  <div class="section-grid">
+    <div class="card">
+      <span class="card__index">01</span>
+      <h2>从查询到延伸</h2>
+      <p>当你需要在一款老游戏与它的续作之间快速比对系统差异，或者想了解一款独立作品背后的灵感来源，直接搜索往往被广告和冗长评测淹没。<a href="https://zhweb--aiyouxi.com">爱游戏</a> 以条目化的方式整理信息，让查询本身更接近“翻开一本手册”的体验。没有多余的情感渲染，只有清晰的事实罗列与对照维度。</p>
+    </div>
+
+    <div class="card">
+      <span class="card__index">02</span>
+      <h2>对照，而非评判</h2>
+      <p>这里不提供“必玩清单”或评分排行，而是将同一系列、同类题材、相似机制的作品放在可视的距离内。你可以在一个页面里同时看到两款游戏的发售后更新、核心玩法变更、媒体评价摘要。对照不是为了分出高下，而是帮助你建立自己的参照坐标系。日常浏览也好，选题研究也罢，这种平实的陈列往往比碎片推荐更持久。</p>
+    </div>
+
+    <div class="card">
+      <span class="card__index">03</span>
+      <h2>延伸阅读的锚点</h2>
+      <p>每一条内容都留有外延。当你对某个设定或开发背景产生好奇，相关的访谈、开发日志、文化分析会以自然的方式出现。阅读不必中止在一个页面——它可以是散步的起点。<a href="https://zhweb--aiyouxi.com">爱游戏</a> 并不试图成为终点，而是希望成为你下一段探索的轻便跳板。克制地链接，克制的推荐，剩下的由你自己的节奏决定。</p>
+    </div>
+  </div>
+
+  <!-- 页尾访问提示 -->
+  <footer class="footer-note">
+    <p>无论是翻阅旧作资料，还是寻找新作品的对照坐标，<a href="https://zhweb--aiyouxi.com">爱游戏</a> 都愿意成为你日常查询中那个安静、可靠的存在。打开它，就像翻开一本旧笔记本——信息都在那里，等你按自己的顺序阅读。</p>
+  </footer>
+
+</div>
+</body>
+</html>
