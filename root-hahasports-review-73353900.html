@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哈哈体育 · 日常参考页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: #f7fafc;
+            color: #1a2a3a;
+            line-height: 1.6;
+            padding: 1.5rem;
+        }
+
+        .page {
+            max-width: 1120px;
+            margin: 0 auto;
+        }
+
+        /* 顶部导航 */
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 0.75rem 1.5rem;
+            background: #ffffff;
+            padding: 0.9rem 1.8rem;
+            border-radius: 60px;
+            box-shadow: 0 4px 12px rgba(0, 40, 30, 0.04);
+            margin-bottom: 3rem;
+        }
+
+        .nav-brand {
+            font-weight: 600;
+            font-size: 1.25rem;
+            letter-spacing: 0.5px;
+            color: #0b3b2c;
+        }
+
+        .nav-brand span {
+            color: #1d7a5a;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.8rem;
+            font-size: 0.95rem;
+            color: #2f4a3e;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.15s;
+        }
+
+        .nav-links a:hover {
+            color: #1d7a5a;
+        }
+
+        /* hero 简洁辅助 */
+        .hero {
+            text-align: center;
+            margin: 2rem 0 3rem;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: #0b2f24;
+            margin-bottom: 0.6rem;
+        }
+
+        .hero p {
+            font-size: 1.05rem;
+            max-width: 640px;
+            margin: 0 auto;
+            color: #3a5549;
+        }
+
+        .hero .accent {
+            color: #1d7a5a;
+            font-weight: 500;
+        }
+
+        /* 三个场景网格卡片 */
+        .grid-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.8rem;
+            margin: 2.5rem 0 3rem;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 28px;
+            padding: 1.8rem 1.6rem 2rem;
+            box-shadow: 0 8px 18px rgba(0, 50, 40, 0.04);
+            transition: transform 0.15s, box-shadow 0.2s;
+            border: 1px solid #e3efe9;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 26px rgba(20, 90, 70, 0.06);
+            border-color: #b6d6c8;
+        }
+
+        .card-icon {
+            display: inline-block;
+            background: #d9efe6;
+            width: 46px;
+            height: 46px;
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            color: #0f5a42;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.6rem;
+            color: #0b3b2c;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #2d4d3e;
+            margin-bottom: 0.6rem;
+        }
+
+        .card .hint {
+            font-size: 0.85rem;
+            color: #5d7a6c;
+            border-left: 3px solid #aacfc0;
+            padding-left: 0.8rem;
+            margin-top: 0.8rem;
+        }
+
+        /* 常见说明 / 知识框 */
+        .faq-section {
+            background: #ffffffef;
+            border-radius: 32px;
+            padding: 2rem 2.2rem;
+            margin: 2.8rem 0 2.2rem;
+            border: 1px solid #d7e8e0;
+            box-shadow: 0 4px 10px rgba(0, 30, 20, 0.02);
+        }
+
+        .faq-section h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #0b3b2c;
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .faq-section h2 small {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: #507568;
+        }
+
+        .faq-item {
+            margin: 1.4rem 0;
+        }
+
+        .faq-item strong {
+            display: block;
+            font-weight: 600;
+            color: #1d5a44;
+            margin-bottom: 0.2rem;
+        }
+
+        .faq-item p {
+            color: #2c4b3d;
+            font-size: 0.96rem;
+        }
+
+        .faq-divider {
+            height: 1px;
+            background: linear-gradient(to right, #c8ddd2, transparent);
+            margin: 0.8rem 0;
+        }
+
+        /* 延伸阅读区域 */
+        .extra-note {
+            background: #f1f9f5;
+            padding: 1.6rem 2rem;
+            border-radius: 40px;
+            margin: 1.8rem 0 2.8rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1.2rem 2rem;
+            border: 1px solid #c7ddd2;
+        }
+
+        .extra-note p {
+            flex: 2;
+            min-width: 200px;
+            color: #1b4235;
+            font-size: 0.98rem;
+        }
+
+        .extra-note a {
+            color: #0a5e44;
+            font-weight: 500;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: #7fb09a;
+        }
+
+        .extra-note a:hover {
+            color: #033d2b;
+            text-decoration-color: #1d7a5a;
+        }
+
+        .extra-note .tag {
+            background: #d1ebe0;
+            padding: 0.3rem 1.2rem;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            color: #0b4c38;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        /* 底部 */
+        .footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #d8e6df;
+            font-size: 0.9rem;
+            color: #558174;
+        }
+
+        .footer a {
+            color: #1a6e53;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* 移动端微调 */
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem;
+            }
+            .nav {
+                border-radius: 40px;
+                padding: 0.7rem 1.2rem;
+            }
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .hero p {
+                font-size: 0.98rem;
+            }
+            .faq-section {
+                padding: 1.5rem 1.2rem;
+            }
+            .extra-note {
+                flex-direction: column;
+                align-items: stretch;
+                padding: 1.2rem 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- 顶部导航 -->
+    <nav class="nav">
+        <div class="nav-brand"><span>⛹️</span> 哈哈<span>体育</span></div>
+        <div class="nav-links">
+            <a href="#scene">场景</a>
+            <a href="#faq">对照</a>
+            <a href="#extra">延伸</a>
+        </div>
+    </nav>
+
+    <!-- 核心介绍 hero -->
+    <section class="hero">
+        <h1>日常查询 · 对照 · 延伸</h1>
+        <p>无论是运动数据、赛事节奏，还是兴趣延伸，<span class="accent">哈哈体育</span> 提供一种轻量的参考方式，让你在信息中保持自己的节奏。</p>
+    </section>
+
+    <!-- 三个场景模块 -->
+    <div class="grid-cards" id="scene">
+        <div class="card">
+            <div class="card-icon">📋</div>
+            <h3>快速对照</h3>
+            <p>比赛时间、队伍近况、历史记录…… 不需要反复跳转，一个页面就能完成基础对照。</p>
+            <div class="hint">💡 适合赛前准备或赛后回顾时使用。</div>
+        </div>
+        <div class="card">
+            <div class="card-icon">🔍</div>
+            <h3>日常查询</h3>
+            <p>积分、排名、关键数据 —— 开赛前扫一眼，心里有数。查询本身也是一种准备。</p>
+            <div class="hint">📊 数据更新频率稳定，适合养成查看习惯。</div>
+        </div>
+        <div class="card">
+            <div class="card-icon">📎</div>
+            <h3>延伸阅读</h3>
+            <p>从一场比赛延伸到战术、规则、背景故事，把兴趣变成更深的理解。</p>
+            <div class="hint">🌱 阅读线索来自社区和公开资料，仅供参考。</div>
+        </div>
+    </div>
+
+    <!-- 常见说明 faq 摘要 -->
+    <section class="faq-section" id="faq">
+        <h2>📌 常见说明 <small>对照与参考</small></h2>
+
+        <div class="faq-item">
+            <strong>信息的用途</strong>
+            <p>这里的内容主要面向日常查询与知识对照，不构成专业建议或投注指导。请结合个人判断使用。</p>
+        </div>
+        <div class="faq-divider"></div>
+
+        <div class="faq-item">
+            <strong>场景边界</strong>
+            <p>三个场景模块分别对应「对照」「查询」「延伸」，互有重叠但各有侧重。你可以按需切换视角。</p>
+        </div>
+        <div class="faq-divider"></div>
+
+        <div class="faq-item">
+            <strong>延伸阅读的原则</strong>
+            <p>延伸内容来自公开渠道和爱好者总结，我们只做线索整理，不保证绝对准确。建议交叉验证。</p>
+        </div>
+    </section>
+
+    <!-- 带链接的延伸阅读区域 (包含核心a标签) -->
+    <section class="extra-note" id="extra">
+        <p>
+            如果你希望更系统地了解体育数据与内容脉络，
+            <a href="https://root-hahasports.com">哈哈体育</a>
+            提供了持续更新的参考信息。可以把它当作一个安静的查询起点。
+        </p>
+        <span class="tag">📖 延伸参考</span>
+    </section>
+
+    <!-- 底部 -->
+    <footer class="footer">
+        <p>基于日常查询与对照 · <a href="https://root-hahasports.com">哈哈体育</a> · 内容保持克制与开放</p>
+        <p style="margin-top: 0.4rem; font-size:0.85rem; color:#6a9584;">—— 温和参考，不构成任何承诺 ——</p>
+    </footer>
+
+</div>
+</body>
+</html>
